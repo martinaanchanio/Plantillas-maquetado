@@ -7,24 +7,40 @@
 </head>
 <body>
     <main>
-        <section class="arriba">
-            <section class="cuadradoIzquierda">
+        <main class="arriba">
+            <aside class="cuadradoIzquierda">
 
-            </section>
-        </section>
-        <section class="medio">
-            <section class="sqMedio">
+            </aside>
+        </main>
+        <main class="medio">
+            <main class="sqMedio">
+                <header class="headMedio"></header>
+                <article class="abajoMedioI">
+                    <figure class="foto"></figure>
+                    <p class="textoFoto">penesito</p>
+                </article>
+            </main>
+            <main class="sqMedio">
+                <header class="headMedio"></header>
+                <article class="medioMedioD"></article>
+                <article class="abajoMedioD">
+                    <article class="datosMedio">
+                        <figure class="datosFoto"></figure>
+                    </article>
+                    <article class="datosMedio">
+                        <figure class="datosFoto"></figure>
+                    </article>
+                    <article class="datosMedio">
+                        <figure class="datosFoto"></figure>
+                    </article>
+                </article>
+            </main>
+        </main>
+        <main class="abajo">
+            <aside class="cuadradoIzquierda">
 
-            </section>
-            <section class="sqMedio">
-
-            </section>
-        </section>
-        <section class="abajo">
-            <section class="cuadradoIzquierda">
-
-            </section>
-        </section>
+            </aside>
+        </main>
     </main>
     
         
@@ -56,13 +72,11 @@
         margin: 0;
     }
     .medio {
-        background-color: rgb(172, 172, 121);
         height: 20rem;
-        width: 50rem;  
+        width: 51rem;  
         margin: 0.5rem;
-        padding: 0.5rem; 
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
     }
     .abajo {
@@ -74,9 +88,78 @@
     .sqMedio {
         background-color: bisque;
         height: 20rem;
-        width: 23rem;
-        margin: 1;
+        width: 24rem;
+        margin: 0;
     }
+    .headMedio {
+        background-color: rgb(0, 0, 0);
+        height: 3rem;
+        width: 24rem;
+        margin: 0;
+    }
+    .abajoMedioI {
+        background-color: rgb(255, 117, 117);
+        height: 17rem;
+        width: 24rem;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .foto {
+        background-color: rgb(117, 255, 255);
+        height: 11rem;
+        width: 13rem;
+        margin: 2 rem; 
+        padding: 0.1rem;
+    }
+    .textoFoto {
+        background-color: rgb(181, 117, 255);
+        height: 2rem;
+        width: 13rem;
+        margin: 0.1rem; 
+        padding: 0.1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .medioMedioD {
+        background-color: rgb(181, 117, 255);
+        height: 5rem;
+        width: 24rem;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+    }
+    .abajoMedioD {
+        background-color: rgb(129, 255, 117);
+        height: 12rem;
+        width: 24rem;
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+        
+    }
+    .datosMedio {
+        background-color: rgb(117, 223, 255);
+        height: 4rem;
+        width: 20rem;
+        display: flex;
+        justify-content: left;
+        flex-direction: row;
+        align-items: center;
+        margin: 0.5rem;
+        padding: 0;
+    }
+    .datosFoto {
+        background-color: rgb(77, 99, 0);
+        height: 3rem;
+        width: 3rem;
+    }
+
 
 </style>
 </html>
