@@ -20,12 +20,24 @@
                 <article class="cajaDerechaArriba detallecajaDerechaArriba">
                     <article class="datosArriba">
                         <figure class="fotodatosArriba"></figure>
-                        <p class="textodatosArriba"></p>
+                        <p class="textoDatosArriba">ii</p>
                     </article>
-                    <article class="datosArriba"></article>
-                    <article class="datosArriba"></article>
-                    <article class="datosArriba"></article>
-                    <article class="datosArriba"></article>
+                    <article class="datosArriba">
+                        <figure class="fotodatosArriba"></figure>
+                        <p class="textoDatosArriba">ii</p>
+                    </article>
+                    <article class="datosArriba">
+                        <figure class="fotodatosArriba"></figure>
+                        <p class="textoDatosArriba">ii</p>
+                    </article>
+                    <article class="datosArriba">
+                        <figure class="fotodatosArriba"></figure>
+                        <p class="textoDatosArriba">ii</p>
+                    </article>
+                    <article class="datosArriba">
+                        <figure class="fotodatosArriba"></figure>
+                        <p class="textoDatosArriba">ii</p>
+                    </article>
                 </article>
             </main>
         </main>
@@ -60,10 +72,43 @@
             </main>
         </main>
         <main class="abajo">
-            <aside class="cuadradoIzquierda">
-
+            <aside class="cuadradoIzquierda cuadradoIzquierdaA">
+                <article class="datosAbajo">
+                    <figure class="datosFotoAbajo"></figure>
+                    <p class="datosTextoAbajo"><p>
+                </article>
+                <article class="datosAbajo">
+                    <figure class="datosFotoAbajo"></figure>
+                    <p class="datosTextoAbajo"><p>
+                </article>
+                <article class="datosAbajo">
+                    <figure class="datosFotoAbajo"></figure>
+                    <p class="datosTextoAbajo"><p>
+                </article>
             </aside>
-            <main class="rectanguloDerecha"></main>
+            <main class="rectanguloDerecha rectanguloDerechaA">
+                <article class="datitosAbajo">
+                    <article class="cajaFtoTitl">
+                        <figure class="fotoabajoDatos"></figure>
+                        <p class="tituloAbajoDatos"></p>
+                    </article>
+                    <article class="cajaFtoTitl cajaFtoTitl1"></article>
+                </article>
+                <article class="datitosAbajo">
+                    <article class="cajaFtoTitl">
+                        <figure class="fotoabajoDatos"></figure>
+                        <p class="tituloAbajoDatos"></p>
+                    </article>
+                    <article class="cajaFtoTitl cajaFtoTitl1"></article>
+                </article>
+                <article class="datitosAbajo">
+                    <article class="cajaFtoTitl">
+                        <figure class="fotoabajoDatos"></figure>
+                        <p class="tituloAbajoDatos"></p>
+                    </article>
+                    <article class="cajaFtoTitl cajaFtoTitl1"></article>
+                </article>
+            </main>
         </main>
     </main>
     
@@ -72,7 +117,9 @@
 </body>
 <style>
     *{
-        background-color:beige
+        background-color:beige;
+        margin: 0;
+        padding: 0;
     }
     body {
         display: flex;
@@ -176,8 +223,7 @@
         width: 24rem;
         display: flex;
         justify-content: left;
-        flex-direction: column;
-        
+        flex-direction: column;        
     }
     .datosMedio {
         background-color: rgb(117, 223, 255);
@@ -251,19 +297,93 @@
         height: 3.5rem;
         width: 3rem;
         display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem;
+        
+    }
+    .fotodatosArriba {
+        background-color: rgb(112, 253, 154);
+        height: 2rem;
+        width: 2rem;    
+    }
+    .textoDatosArriba {
+        background-color: rgb(187, 187, 187);
+        height: 1rem;
+        width: 3rem; 
+        margin: 0.2rem;
+    }
+    .datosAbajo {
+        background-color: rgb(117, 223, 255);
+        height: 1.2rem;
+        width: 9rem;
+        display: flex;
+        justify-content: left;
+        flex-direction: row;
+        align-items: center;
+        margin: .3rem;
+        padding: 0;
+    }
+    .cuadradoIzquierdaA {
+        display: flex;
+        justify-content: flex-start;
+        align-items: self-start;
+        flex-direction: column;
+        padding: 0.4rem;
+    }
+    .datosFotoAbajo {
+        background-color: rgb(110, 0, 0);
+        height: 1rem;
+        width: 1rem;
+        margin: 0.2rem;
+    }
+    .datosTextoAbajo {
+        background-color: rgb(219, 243, 0);
+        height: 0.8rem;
+        width: 7rem;
+        margin: 0.3rem;
+    }
+    .datitosAbajo {
+        background-color: rgb(123, 49, 141);
+        height: 6rem;
+        width: 9rem;
+        display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
         margin: 1rem;
         padding: 0;
     }
-
-    .fotodatosArriba {
-        background-color: rgb(112, 253, 154);
-        height: 2rem;
-        width: 2rem;
+    .rectanguloDerechaA {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+    }
+    .cajaFtoTitl {
+        background-color: rgb(32, 129, 136);
+        height: 3rem;
+        width: 9rem;
+        display: flex;
+        justify-content: left;
+        flex-direction: row;
+        align-items: self-end;
+    }
+    .cajaFtoTitl1 {
+        background-color: blue;
+    }
+    .fotoabajoDatos {
+        background-color: rgb(110, 0, 0);
+        height: 3rem;
+        width: 3rem;
         margin: 0rem;
-        
+    }
+    .tituloAbajoDatos {
+        background-color: rgb(13, 110, 0);
+        height: 1rem;
+        width: 5rem;
+        margin: 0rem;
     }
 
 </style>
