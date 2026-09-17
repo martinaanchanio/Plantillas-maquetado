@@ -9,13 +9,19 @@
     <main>
         <main class="arriba">
             <aside class="cuadradoIzquierda">
-                <article class="textosqI">faltan textosuwu</article>
+                <article class="textosqI">
+                    <p class="textosqITitulos"></p>
+                    <p class="textosqIParrafos"></p>
+                </article>
             </aside>
             <main class="rectanguloDerecha">
                 <article class="cajaDerechaArriba">
-                    <figure class="flecha"></figure>
-                    <p class="textoarribaD">faltan teextos ik</p>
-                    <figure class="flecha"></figure>
+                    <figure class="flecha">⬅️</figure>
+                    <article class="textoarribaD">
+                        <p class="textoarribaDTitulo"></p>
+                        <p class="textoarribaDParrafo"></p>
+                    </article>
+                    <figure class="flecha">➡️</figure>
                 </article>
                 <article class="cajaDerechaArriba detallecajaDerechaArriba">
                     <article class="datosArriba">
@@ -46,34 +52,49 @@
                 <header class="headMedio"></header>
                 <article class="abajoMedioI">
                     <figure class="foto"></figure>
-                    <p class="textoFoto">faltan textooos</p>
+                    <article class="textoFoto">
+                        <p class="textofotoTitulo"></p>
+                        <p class="textofotoParrafo"></p>
+                    </article>
                 </article>
             </main>
             <main class="sqMedio">
                 <header class="headMedio"></header>
                 <article class="medioMedioD">
                     <figure class="fotomedioMedioD"></figure>
-                    <p class="textomedioMedioD">faltan textitos</p>
+                    <article class="textomedioMedioD">
+                        <p class="textomedioMedioTitulo"></p>
+                        <p class="textomedioMedioParrafo"></p>
+                    </article>
                 </article>
                 <article class="abajoMedioD">
                     <article class="datosMedio">
                         <figure class="datosFoto"></figure>
-                        <p class="datosTexto">faltan mini cuadrados</p>
+                        <article class="datosTexto">
+                            <p class="datosTextoTitulo"></p>
+                            <p class="datosTextoParrafo"></p>
+                        </article>
                     </article>
                     <article class="datosMedio">
                         <figure class="datosFoto"></figure>
-                        <p class="datosTexto"></p>
+                        <article class="datosTexto">
+                            <p class="datosTextoTitulo"></p>
+                            <p class="datosTextoParrafo"></p>
+                        </article>
                     </article>
                     <article class="datosMedio">
                         <figure class="datosFoto"></figure>
-                        <p class="datosTexto"></p>
+                        <article class="datosTexto">
+                            <p class="datosTextoTitulo"></p>
+                            <p class="datosTextoParrafo"></p>
+                        </article>
                     </article>
                 </article>
             </main>
         </main>
         <main class="abajo">
             <aside class="cuadradoIzquierda cuadradoIzquierdaA">
-                <article class="datosAbajo">
+                <article class="datosAbajo datosAbajo1">
                     <figure class="datosFotoAbajo"></figure>
                     <p class="datosTextoAbajo"><p>
                 </article>
@@ -106,7 +127,7 @@
                         <figure class="fotoabajoDatos"></figure>
                         <p class="tituloAbajoDatos"></p>
                     </article>
-                    <article class="cajaFtoTitl cajaFtoTitl1"></article>
+                    <article class="cajaFtoTitl cajaFtoTitl1">Texto</article>
                 </article>
             </main>
         </main>
@@ -131,7 +152,6 @@
         
     }
     .arriba {
-        background-color: rgb(172, 172, 121);
         height: 10rem;
         width: 51rem;
         margin: 0.5rem;
@@ -142,7 +162,7 @@
                 
     }
     .cuadradoIzquierda{
-        background-color: bisque;
+        background-color: rgb(100, 216, 236);
         height: 10rem;
         width: 11rem;
         margin: 0;
@@ -159,7 +179,6 @@
         align-items: center;
     }
     .abajo {
-        background-color: rgb(172, 172, 121);
         height: 10rem;
         width: 51rem;  
         margin: 0.5rem;
@@ -175,13 +194,13 @@
         margin: 0;
     }
     .headMedio {
-        background-color: rgb(0, 0, 0);
+        background-color: rgb(80, 80, 80);
         height: 3rem;
         width: 24rem;
         margin: 0;
     }
     .abajoMedioI {
-        background-color: rgb(255, 117, 117);
+        background-color: rgb(212, 212, 212);
         height: 17rem;
         width: 24rem;
         margin: 0;
@@ -191,7 +210,7 @@
         align-items: center;
     }
     .foto {
-        background-color: rgb(117, 255, 255);
+        background-color: rgb(139, 139, 139);
         height: 11rem;
         width: 13rem;
         margin: 2 rem; 
@@ -199,13 +218,25 @@
     }
     .textoFoto {
         background-color: rgb(181, 117, 255);
-        height: 2rem;
+        height: 3rem;
         width: 13rem;
-        margin: 0.1rem; 
-        padding: 0.1rem;
-        display: flex;
-        align-items: center;
+        margin: 0.3rem; 
+        padding: 0rem;
+        display: flex;        
         justify-content: center;
+        align-items: start;
+        flex-direction: column;
+    }
+    .textofotoTitulo {
+        background-color: rgb(4, 58, 55);
+        height: 1rem;
+        width: 13rem;
+    }
+    .textofotoParrafo {
+        background-color: rgb(11, 148, 141);
+        height: 1.5rem;
+        width: 13rem;
+        margin-top: .5rem;
     }
     .medioMedioD {
         background-color: rgb(181, 117, 255);
@@ -248,6 +279,17 @@
         width: 15rem;
         margin: 0.3rem;
     }
+    .datosTextoTitulo {
+        background-color: rgb(255, 60, 0);
+        height: .7rem;
+        width: 15rem; 
+    }
+    .datosTextoParrafo {
+        background-color: rgb(94, 27, 6);
+        height: 1.2rem;
+        width: 15rem; 
+        margin-top: .3rem;
+    }
     .fotomedioMedioD {
         background-color: blue;
         height: 4rem;
@@ -260,19 +302,43 @@
         width: 15rem;
         margin: 0.5rem;
     }
+    .textomedioMedioTitulo {
+        background-color: rgb(255, 19, 235);
+        height: 1.2rem;
+        width: 15rem;
+    }
+    .textomedioMedioParrafo {
+        background-color: rgb(134, 0, 123);
+        height: 2.3rem;
+        width: 15rem;
+        margin-top: .5rem;
+    }
     .textosqI {
-        background-color: rgb(255, 149, 246);
+        background-color: rgb(100, 216, 236);
         height: 7rem;
         width: 7rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .textosqITitulos {
+        background-color: rgb(238, 238, 238);
+        height: 3rem;
+        width: 7rem;
+        margin-top: 1rem;
+    }
+    .textosqIParrafos {
+        background-color: rgb(107, 107, 107);
+        height: 1.5rem;
+        width: 7rem;
+        margin-top: .5rem;
     }
     .rectanguloDerecha {
-        background-color: rgb(255, 155, 33);
         height: 10rem;
         width: 40rem;
         margin: 0;   
     }
     .cajaDerechaArriba {
-        background-color: rgb(33, 255, 63);
+        background-color: rgb(227, 255, 255);
         height: 5rem;
         width: 40rem;
         display: flex;
@@ -280,20 +346,34 @@
         align-items: center;
         flex-direction: row;
     }
-    .detallecajaDerechaArriba {background-color: brown;}
+    .detallecajaDerechaArriba {background-color: rgb(227, 255, 255);}
     .flecha{
-        background-color: rgb(71, 33, 131);
+        background-color: rgb(227, 255, 255);
         height: 3rem;
         width: 2rem;
         margin: 0.4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .textoarribaD {
-        background-color: rgb(129, 73, 1);
+        background-color: rgb(227, 255, 255);
         height: 3rem;
         width: 24rem;
     }
+    .textoarribaDTitulo {
+        background-color: rgb(32, 32, 32);
+        height: 1rem;
+        width: 24rem;
+    }
+    .textoarribaDParrafo {
+        background-color: rgb(167, 167, 167);
+        height: 1.5rem;
+        width: 24rem;
+        margin-top: .5rem; 
+    }
     .datosArriba {
-        background-color: rgb(253, 227, 112);
+        background-color: rgb(227, 255, 255);
         height: 3.5rem;
         width: 3rem;
         display: flex;
@@ -304,12 +384,12 @@
         
     }
     .fotodatosArriba {
-        background-color: rgb(112, 253, 154);
+        background-color: rgb(100, 216, 236);
         height: 2rem;
         width: 2rem;    
     }
     .textoDatosArriba {
-        background-color: rgb(187, 187, 187);
+        background-color: rgb(197, 197, 197);
         height: 1rem;
         width: 3rem; 
         margin: 0.2rem;
@@ -323,14 +403,18 @@
         flex-direction: row;
         align-items: center;
         margin: .3rem;
-        padding: 0;
+        margin-left: 1rem;
+        padding: 0
+    }
+    .datosAbajo1 {
+        margin-top: 1rem; 
     }
     .cuadradoIzquierdaA {
         display: flex;
         justify-content: flex-start;
         align-items: self-start;
         flex-direction: column;
-        padding: 0.4rem;
+
     }
     .datosFotoAbajo {
         background-color: rgb(110, 0, 0);
@@ -382,9 +466,10 @@
     .tituloAbajoDatos {
         background-color: rgb(13, 110, 0);
         height: 1rem;
-        width: 5rem;
-        margin: 0rem;
+        width: 5.5rem;
+        margin-left: .5rem;
     }
+    
 
 </style>
 </html>
